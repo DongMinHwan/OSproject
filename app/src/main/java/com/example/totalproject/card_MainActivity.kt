@@ -13,7 +13,6 @@ import com.example.totalproject.card.card_MainAdapter
 import com.example.totalproject.card.card_imageView
 import com.example.totalproject.card.card_imageView2
 import kotlinx.android.synthetic.main.card_activity_main.*
-import kotlinx.android.synthetic.main.card_list.view.*
 import kotlinx.android.synthetic.main.card_list2.view.*
 import org.json.JSONObject
 
@@ -48,17 +47,18 @@ class card_MainActivity : AppCompatActivity() {
             listView.onItemClickListener = AdapterView.OnItemClickListener{ parent, view, position, id ->
                 if(position % 2 == 0) {
                     var intent = Intent(this, card_imageView::class.java)
-                    // intent.putExtra("cardTitle",view.cardTitle.getText().toString())
-                    intent.putExtra("cardTitle", view.cardTitle_01.getText().toString())
 
+                    intent.putExtra("cardTitle", view.cardTitle_01.getText().toString())
                     startActivity(intent)
+
                     overridePendingTransition(R.anim.none2, R.anim.horizon_exit2)
                 } else{
                     var intent = Intent(this, card_imageView2::class.java)
-                    // intent.putExtra("cardTitle",view.cardTitle.getText().toString())
+
                     intent.putExtra("cardTitle", view.cardTitle_01.getText().toString())
 
                     startActivity(intent)
+
                     overridePendingTransition(R.anim.none2, R.anim.horizon_exit2)
                 }
 
