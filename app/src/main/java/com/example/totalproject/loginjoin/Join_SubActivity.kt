@@ -23,7 +23,6 @@ class Join_SubActivity : AppCompatActivity() {
             JOIN_ID.setText(intent.getStringExtra("id"))
             JOIN_PW.setText(intent.getStringExtra("password"))
             JOIN_PW2.setText(intent.getStringExtra("password"))
-
         }
 
         join_cancle_button.setOnClickListener{
