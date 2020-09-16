@@ -31,11 +31,12 @@ class card_imageView2 : AppCompatActivity() {
         if(intent.hasExtra("cardTitle")) {
             val imgurl = url.toString()
             println("url : "+imgurl)
-            Glide.with(this).load(imgurl).into(img)
 
-            if(imgurl == ""){
+            if(imgurl == "") {
                 //Toast.makeText(this, "이미지가 없습니다.!", Toast.LENGTH_SHORT).show()
                 Glide.with(this).load(R.drawable.android).into(img)
+            }else{
+                Glide.with(this).load(imgurl).into(img)
             }
 
         }

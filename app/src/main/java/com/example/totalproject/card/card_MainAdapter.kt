@@ -32,7 +32,7 @@ class card_MainAdapter (val context: Context, val jArray : JSONArray) : BaseAdap
         val categoryDesc_01 = view.findViewById<TextView>(R.id.categoryDesc_01)
         val img_01 = view.findViewById<ImageView>(R.id.listImage_01)
 
-        val cardTitle_02 = view.findViewById<TextView>(R.id.cardTitle_02)
+        val cardTitle_02 = view.findViewById<TextView>(R.id.cardTitle_01)
         val category_02 = view.findViewById<TextView>(R.id.category_02)
         val categoryDesc_02 = view.findViewById<TextView>(R.id.categoryDesc_02)
         val img_02 = view.findViewById<ImageView>(R.id.listImage_02)
